@@ -1,0 +1,68 @@
+{
+    "$schema_description": "Defines contextual risk weights and asset criticality attributes for automated vulnerability prioritization triage.",
+    "organizations": [
+        {
+            "org_id": "ORG-001",
+            "name": "Global Retail Bank",
+            "sector": "Financial Services",
+            "risk_appetite": "Low",
+            "service": "Core banking platform",
+            "exposure": "internet-facing",
+            "importance": "critical",
+            "weight_modifiers": {
+                "cvss_weight": 0.3,
+                "cisa_kev_weight": 0.45,
+                "first_epss_weight": 0.25,
+                "exposure_weight": 0.2,
+                "importance_critical_weight": 0.15,
+                "importance_high_weight": 0.08
+            },
+            "critical_products": [
+                "Core Banking Framework",
+                "Identity Provider SaaS"
+            ]
+        },
+        {
+            "org_id": "ORG-002",
+            "name": "Agile Cloud Tech Startup",
+            "sector": "Technology",
+            "risk_appetite": "High",
+            "service": "Customer-facing SaaS product",
+            "exposure": "internet-facing",
+            "importance": "high",
+            "weight_modifiers": {
+                "cvss_weight": 0.2,
+                "cisa_kev_weight": 0.2,
+                "first_epss_weight": 0.6,
+                "exposure_weight": 0.15,
+                "importance_critical_weight": 0.15,
+                "importance_high_weight": 0.08
+            },
+            "critical_products": [
+                "Cloud Database Engine",
+                "Web Application Firewall"
+            ]
+        },
+        {
+            "org_id": "ORG-003",
+            "name": "Municipal Utility Provider",
+            "sector": "Critical Infrastructure",
+            "risk_appetite": "Zero-Tolerance",
+            "service": "Grid control and monitoring network",
+            "exposure": "internal",
+            "importance": "critical",
+            "weight_modifiers": {
+                "cvss_weight": 0.5,
+                "cisa_kev_weight": 0.4,
+                "first_epss_weight": 0.1,
+                "exposure_weight": 0.2,
+                "importance_critical_weight": 0.15,
+                "importance_high_weight": 0.08
+            },
+            "critical_products": [
+                "Embedded IoT Gateway",
+                "Enterprise Router OS"
+            ]
+        }
+    ]
+}
