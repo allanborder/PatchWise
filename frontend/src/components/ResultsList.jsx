@@ -14,12 +14,14 @@ export default function ResultsList({ results, orgId, plainMode }) {
             <div key={r.cve_id} className="relative">
               <ResultCard result={r} rank={i + 1} orgId={orgId} plainMode={plainMode} />
               {isExpanded && i !== 0 && (
-                <button
-                  onClick={() => setExpanded(null)}
-                  className="absolute right-3 top-3 rounded-md bg-white/80 px-2 py-1 text-xs text-slate-700 shadow"
-                >
-                  Collapse
-                </button>
+                <div className="mt-2 flex justify-end">
+                  <button
+                    onClick={() => setExpanded(null)}
+                    className="rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-700 shadow-sm transition hover:border-slate-300 hover:text-slate-900"
+                  >
+                    Collapse
+                  </button>
+                </div>
               )}
             </div>
           );
