@@ -2,7 +2,14 @@
 name = "patchwise"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastapi",
+    "pandas",
+    "pydantic",
+    "python-dotenv",
+    "openai>=1.0.0",
+    "httpx",
+]
 
 [tool.vercel]
 entrypoint = "api.serverless:app"
