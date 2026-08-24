@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const API_BASE = "http://localhost:8010";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "";
 
 export default function PatchyChat({ orgId, results }) {
   const [open, setOpen] = useState(false);

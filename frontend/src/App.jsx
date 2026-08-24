@@ -60,10 +60,7 @@ function App() {
           <div className="rounded-xl border border-red-300/40 bg-red-950/30 p-4 text-sm text-red-200">
             <p className="font-semibold mb-1">Couldn't reach the backend</p>
             <p>
-              Make sure the API server is running at{" "}
-              <code className="rounded bg-red-900/50 px-1">localhost:8010</code>.
-              <br />
-              ({error})
+              Make sure the API server is available. ({error})
             </p>
           </div>
         )}
