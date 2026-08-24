@@ -168,20 +168,6 @@ PatchWise/
 └── README.md
 ```
 
----
-
-## 📸 Screenshots
-
-Add screenshots here:
-
-### Dashboard
-
-### Vulnerability Details
-
-### AI Assistant
-
----
-
 ## ▶️ Running Locally
 
 ### Clone Repository
