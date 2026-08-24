@@ -3,7 +3,7 @@ import ResultsList from "./components/ResultsList";
 import NegativeTestPanel from "./components/NegativeTestPanel";
 import ProfileSelector from "./components/ProfileSelector";
 import ElasticGridBackground from "./components/ElasticGridBackground";
-import PlainLanguageToggle from "./components/PlainLanguageToggle";
+import PlainLanguageToggle from "./components/Plainlanguagetoggle";
 import { fetchToprank } from "./api/fetchToprank";
 import PatchyChat from "./components/PatchyChat";
 
