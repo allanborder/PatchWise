@@ -24,7 +24,7 @@ function App() {
   }, [orgId]);
 
   return (
-    <div className="relative min-h-screen bg-[#0b1220]">
+    <div className="relative min-h-screen bg-[#452615]">
       <ElasticGridBackground
         spacing={72}
         lineColor="rgba(231, 210, 188, 0.045)"
@@ -61,7 +61,7 @@ function App() {
             <p className="font-semibold mb-1">Couldn't reach the backend</p>
             <p>
               Make sure the API server is running at{" "}
-              <code className="rounded bg-red-900/50 px-1">localhost:8000</code>.
+              <code className="rounded bg-red-900/50 px-1">localhost:8010</code>.
               <br />
               ({error})
             </p>

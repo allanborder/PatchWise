@@ -1,1 +1,5 @@
+/* Add this to the top of index.css (or inside :root/html selector) */
+html {
+  scroll-behavior: smooth;
+}
 @import "tailwindcss";
